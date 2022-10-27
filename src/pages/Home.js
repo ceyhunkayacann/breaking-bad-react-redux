@@ -55,12 +55,14 @@ function Home() {
                     ))
                 }
             </Masonry>
-            <div className='btn-div'>
+            <div className='btn-div' onClick={() => dispatch(fetchCharacters(nextPage))}>
                 {status === 'loading' && <Loading />}
                 {hasNextPage && status !== 'loading' && (
-                    <button onClick={() => dispatch(fetchCharacters(nextPage))} >
-                        Load More..
-                    </button>
+                    <div id='load-div' >
+                        
+                            Load More..
+                        
+                    </div>
                 )}
                 {
                     !hasNextPage && <div>There is nothing to be shown..</div>

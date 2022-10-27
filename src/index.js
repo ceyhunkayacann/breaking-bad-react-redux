@@ -14,6 +14,7 @@ import Root from "./routes/root";
 import ErrorPage from "./errorPage";
 import Home from './pages/Home';
 import Detail from './pages/Detail';
+import MainPage from './pages/MainPage';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,12 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/home",
+        path: "/",
+        element: <MainPage />,
+        errorElement: <ErrorPage />
+      },
+      {
+        path: "/characters",
         element: <Home />,
         errorElement: <ErrorPage />
       },

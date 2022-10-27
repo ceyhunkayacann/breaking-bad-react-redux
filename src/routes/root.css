@@ -31,7 +31,8 @@ ul {
     display: flex;
 }
 
-img {
-    width: 100px;
+#logo-icon {
+    width: 180px;
+    padding : 0;
 }
 

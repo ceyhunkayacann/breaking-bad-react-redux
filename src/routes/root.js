@@ -6,18 +6,21 @@ export default function Root() {
     return (
         <>
             <div id="sidebar">
-                <div>
-                    <img src={Logo}></img>
 
-                </div>
+                <Link to='/'>
+                    <div id="logo-icon">
+                        <img src={Logo}></img>
+
+                    </div>
+                </Link>
 
                 <div>
                     <ul>
                         <li>
-                            <Link to={"home"}>Characters</Link>
+                            <Link to={"characters"}>Characters</Link>
                         </li>
                         <li>
-                            <Link to={"characters"}>Words</Link>
+                            <Link to={"words"}>Words</Link>
                         </li>
                     </ul>
                 </div>
