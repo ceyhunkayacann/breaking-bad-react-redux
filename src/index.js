@@ -15,6 +15,7 @@ import ErrorPage from "./errorPage";
 import Home from './pages/Home';
 import Detail from './pages/Detail';
 import MainPage from './pages/MainPage';
+import Quotes from './pages/Quotes';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
       {
         path: "/char/:char_id",
         element: <Detail />,
+        errorElement: <ErrorPage />
+      },
+      {
+        path: "/quotes",
+        element: <Quotes/> ,
         errorElement: <ErrorPage />
       },
     ]

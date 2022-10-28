@@ -20,7 +20,7 @@ export default function Root() {
                             <Link to={"characters"}>Characters</Link>
                         </li>
                         <li>
-                            <Link to={"words"}>Words</Link>
+                            <Link to={"quotes"}>Quotes</Link>
                         </li>
                     </ul>
                 </div>
